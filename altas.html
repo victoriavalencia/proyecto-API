@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar producto</title>
+    <link rel="stylesheet" href="../proyecto-API/estilos.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <!-- <div><img src="img/corazon.png" alt=""></div> -->
+        <ul class="navbar-items">
+          <li class="navbar-titulos"><a href="../index.html">Inicio</a></li>
+          <li class="navbar-titulos"><a href="pages/nosotros.html">Nosotros</a></li>
+          <li class="navbar-titulos"><a href="pages/bolsones.html"> Bolsones</a></li>
+          <li class="navbar-titulos"><a href="pages/preguntas.html">Preguntas frecuentes</a></li>
+        </ul>
+      </nav>
+
+    <h1>Agregar Nuevo Cliente</h1>
+    <!-- <h3>Codo a Codo 2023</h3> enctype="multipart/form-data" es necesario para enviar archivos al back. -->
+    <form id="formulario" enctype="multipart/form-data">
+
+        <!-- necesito: nombre, apellido, telefono, localidad, direccion, bolson, medio de pago, dia de entrega -->
+    
+        <label for="nombre">Nombre:</label> 
+        <input type="text" id="nombre" name="nombre" required><br> 
+        
+        <label for="apellido"> Apellido:</label> 
+        <input type="text" id="apellido" name="apellido" required><br>
+
+        <label for="telefono">Teléfono:</label> 
+        <input type="tel" size="10" id="telefono" name="telefono" placeholder="1158005442" required><br> 
+
+        <label for="localidad">Localidad:</label> 
+        <input type="text" id="localidad" name="localidad" required><br>
+
+        <label for="direccion">Dirección:</label> 
+        <input type="text" id="direccion" name="direccion" required><br>
+        
+        <label for="bolson">Bolsón número:</label> 
+        <input type="number" min="1" max="3" id="bolson_numero" name="bolson" required><br>
+
+        <label for="medio_de_pago">Medio de Pago:</label> 
+        <select name="medio_de_pago">
+            <option>MercadoPago</option>
+            <option>Efectivo</option>
+            <option>Tarjeta</option>
+        </select> 
+
+        <label for="dia_de_entrega">Día de Entrega</label>
+        <select name="dia_de_entrega">
+            <option>Lunes</option>
+            <option>Martes</option>
+            <option>Miercoles</option>
+            <option>Jueves</option>
+            <option>Viernes</option>
+            <option>Sábado</option>
+        </select> 
+
+
+
+        <button type="submit">Agregar Cliente</button> <a href="index.html">Menu principal</a>
+    </form>
+    <script src="altas.js"></script>
+</body>
+
+</html>
