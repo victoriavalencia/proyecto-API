@@ -1,4 +1,4 @@
-const URL = "https://sofitarabusi.pythonanywhere.com" //En el pdf usan el http://127.0.0.1:500 que es el servidor local, ahora que está en py anywhere qué url debería ser?? 
+const URL = "https://sofitarabusi.pythonanywhere.com" //En el pdf usan el http://127.0.0.1:500 que es el servidor local pero uso este que me da py anywhere 
 
 //capturamos el evento de envio del formulario 
 document.getElementById('formulario').addEventListener('submit',function(event) {
